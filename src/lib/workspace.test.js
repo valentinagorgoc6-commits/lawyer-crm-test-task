@@ -27,8 +27,11 @@ describe("demo workspace", () => {
     const now = new Date(2026, 6, 10, 12);
     const workspace = createDemoWorkspace(now);
     const matter = workspace[0].matters[0];
+    for (const task of collection(workspace, "tasks")) task.telegram = false;
+
+    const reminderId = nextId(workspace, "tasks");
     matter.tasks.push({
-      id: nextId(workspace, "tasks"),
+      id: reminderId,
       matterId: matter.id,
       title: "Позвонить клиенту",
       dueAt: new Date(now.getTime() - 60_000).toISOString(),
@@ -39,11 +42,15 @@ describe("demo workspace", () => {
       telegramSent: false,
       createdAt: now.toISOString(),
     });
-    const before = matter.activities.length;
-
     expect(processDueReminders(workspace, now)).toBe(true);
     expect(processDueReminders(workspace, now)).toBe(false);
-    expect(matter.activities).toHaveLength(before + 1);
-    expect(matter.tasks.at(-1).telegramSent).toBe(true);
+    expect(
+      matter.activities.filter((activity) =>
+        activity.text.includes("Позвонить клиенту"),
+      ),
+    ).toHaveLength(1);
+    expect(
+      matter.tasks.find((task) => task.id === reminderId)?.telegramSent,
+    ).toBe(true);
   });
 });
