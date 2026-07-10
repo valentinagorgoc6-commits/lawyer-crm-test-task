@@ -1,0 +1,614 @@
+[
+  {
+    "id": 1,
+    "name": "Иванов Иван",
+    "phone": "+7 916 420-18-32",
+    "email": "ivanov@mail.ru",
+    "caseType": "Гражданское дело",
+    "description": "Подготовить позицию и проверить оригиналы документов.",
+    "deadline": "2026-07-11T07:00:00.000Z",
+    "assignee": "Я",
+    "status": "Суд",
+    "createdAt": "2026-07-10 07:58:56",
+    "updatedAt": "2026-07-10 07:58:56",
+    "matters": [
+      {
+        "id": 1,
+        "clientId": 1,
+        "title": "Защита по гражданскому иску",
+        "number": "А40-18421/2026",
+        "practice": "Гражданское дело",
+        "stage": "Суд",
+        "court": "Тверской районный суд",
+        "judge": "Е.А. Лебедева",
+        "hearingAt": "2026-07-11T07:30:00.000Z",
+        "deadline": "2026-07-11T15:00:00.000Z",
+        "assignee": "Я",
+        "summary": "Подготовлена позиция. Ключевой риск — не хватает оригинала договора. Завтра судебное заседание.",
+        "createdAt": "2026-07-10 07:58:56",
+        "updatedAt": "2026-07-10 07:58:56",
+        "tasks": [
+          {
+            "id": 1,
+            "matterId": 1,
+            "title": "Проверить оригинал договора",
+            "dueAt": "2026-07-10T12:00:00.000Z",
+            "priority": "high",
+            "status": "todo",
+            "type": "document",
+            "telegram": true,
+            "telegramSent": false,
+            "createdAt": "2026-07-10 07:58:56"
+          },
+          {
+            "id": 2,
+            "matterId": 1,
+            "title": "Позвонить клиенту перед заседанием",
+            "dueAt": "2026-07-10T14:00:00.000Z",
+            "priority": "high",
+            "status": "todo",
+            "type": "call",
+            "telegram": true,
+            "telegramSent": false,
+            "createdAt": "2026-07-10 07:58:56"
+          }
+        ],
+        "events": [
+          {
+            "id": 1,
+            "matterId": 1,
+            "title": "Судебное заседание",
+            "startsAt": "2026-07-11T07:30:00.000Z",
+            "type": "hearing",
+            "location": "Тверской районный суд",
+            "createdAt": "2026-07-10 07:58:56"
+          }
+        ],
+        "documents": [
+          {
+            "id": 1,
+            "matterId": 1,
+            "name": "Исковое заявление.pdf",
+            "category": "Процессуальный",
+            "status": "Готов",
+            "updatedAt": "2026-07-10 07:58:56"
+          },
+          {
+            "id": 2,
+            "matterId": 1,
+            "name": "Оригинал договора",
+            "category": "Доказательство",
+            "status": "Ожидается",
+            "updatedAt": "2026-07-10 07:58:56"
+          }
+        ],
+        "activities": [
+          {
+            "id": 21,
+            "matterId": 1,
+            "type": "task",
+            "text": "Задача возвращена в работу: «Проверить оригинал договора»",
+            "createdAt": "2026-07-10 08:01:40"
+          },
+          {
+            "id": 15,
+            "matterId": 1,
+            "type": "task",
+            "text": "Задача выполнена: «Проверить оригинал договора»",
+            "createdAt": "2026-07-10 08:00:28"
+          },
+          {
+            "id": 2,
+            "matterId": 1,
+            "type": "note",
+            "text": "Подготовлена позиция. Ключевой риск — не хватает оригинала договора. Завтра судебное заседание.",
+            "createdAt": "2026-07-08T12:00:00.000Z"
+          },
+          {
+            "id": 1,
+            "matterId": 1,
+            "type": "matter",
+            "text": "Дело создано и добавлено в рабочую воронку",
+            "createdAt": "2026-07-02T07:00:00.000Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Марина Соколова",
+    "phone": "+7 903 118-72-45",
+    "email": "sokolova@mail.ru",
+    "caseType": "Семейное право",
+    "description": "Согласовать финальную редакцию соглашения.",
+    "deadline": "2026-07-13T07:00:00.000Z",
+    "assignee": "Я",
+    "status": "Договор",
+    "createdAt": "2026-07-10 07:58:56",
+    "updatedAt": "2026-07-10 07:58:56",
+    "matters": [
+      {
+        "id": 2,
+        "clientId": 2,
+        "title": "Соглашение о разделе имущества",
+        "number": "Д-2026-041",
+        "practice": "Семейное право",
+        "stage": "Договор",
+        "court": null,
+        "judge": null,
+        "hearingAt": null,
+        "deadline": "2026-07-13T15:00:00.000Z",
+        "assignee": "Я",
+        "summary": "Стороны согласовали основные условия. Нужно получить подпись второй стороны и закрыть редакционные замечания.",
+        "createdAt": "2026-07-10 07:58:56",
+        "updatedAt": "2026-07-10 07:58:56",
+        "tasks": [
+          {
+            "id": 4,
+            "matterId": 2,
+            "title": "Сверить реквизиты имущества",
+            "dueAt": "2026-07-11T11:00:00.000Z",
+            "priority": "medium",
+            "status": "todo",
+            "type": "task",
+            "telegram": false,
+            "telegramSent": false,
+            "createdAt": "2026-07-10 07:58:56"
+          },
+          {
+            "id": 3,
+            "matterId": 2,
+            "title": "Получить подпись второй стороны",
+            "dueAt": "2026-07-12T08:00:00.000Z",
+            "priority": "high",
+            "status": "todo",
+            "type": "task",
+            "telegram": true,
+            "telegramSent": false,
+            "createdAt": "2026-07-10 07:58:56"
+          }
+        ],
+        "events": [
+          {
+            "id": 2,
+            "matterId": 2,
+            "title": "Созвон по финальной редакции",
+            "startsAt": "2026-07-12T08:00:00.000Z",
+            "type": "call",
+            "location": "Онлайн",
+            "createdAt": "2026-07-10 07:58:56"
+          }
+        ],
+        "documents": [
+          {
+            "id": 3,
+            "matterId": 2,
+            "name": "Соглашение v4.docx",
+            "category": "Проект",
+            "status": "Нужна подпись",
+            "updatedAt": "2026-07-10 07:58:56"
+          }
+        ],
+        "activities": [
+          {
+            "id": 4,
+            "matterId": 2,
+            "type": "note",
+            "text": "Стороны согласовали основные условия. Нужно получить подпись второй стороны и закрыть редакционные замечания.",
+            "createdAt": "2026-07-08T12:00:00.000Z"
+          },
+          {
+            "id": 3,
+            "matterId": 2,
+            "type": "matter",
+            "text": "Дело создано и добавлено в рабочую воронку",
+            "createdAt": "2026-07-02T07:00:00.000Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Алексей Морозов",
+    "phone": "+7 925 602-41-09",
+    "email": "morozov@mail.ru",
+    "caseType": "Арбитраж",
+    "description": "Ожидается определение суда.",
+    "deadline": "2026-07-17T07:00:00.000Z",
+    "assignee": "Я",
+    "status": "Суд",
+    "createdAt": "2026-07-10 07:58:56",
+    "updatedAt": "2026-07-10 07:58:56",
+    "matters": [
+      {
+        "id": 3,
+        "clientId": 3,
+        "title": "Взыскание задолженности",
+        "number": "А56-90312/2025",
+        "practice": "Арбитраж",
+        "stage": "Суд",
+        "court": "Арбитражный суд Москвы",
+        "judge": "И.В. Горин",
+        "hearingAt": "2026-07-17T07:30:00.000Z",
+        "deadline": "2026-07-17T15:00:00.000Z",
+        "assignee": "Я",
+        "summary": "Иск принят. Ожидается заседание, доказательства отправлены второй стороне.",
+        "createdAt": "2026-07-10 07:58:56",
+        "updatedAt": "2026-07-10 07:58:56",
+        "tasks": [
+          {
+            "id": 5,
+            "matterId": 3,
+            "title": "Подготовить вопросы представителю ответчика",
+            "dueAt": "2026-07-15T10:00:00.000Z",
+            "priority": "medium",
+            "status": "todo",
+            "type": "task",
+            "telegram": false,
+            "telegramSent": false,
+            "createdAt": "2026-07-10 07:58:56"
+          }
+        ],
+        "events": [
+          {
+            "id": 3,
+            "matterId": 3,
+            "title": "Предварительное заседание",
+            "startsAt": "2026-07-17T09:00:00.000Z",
+            "type": "hearing",
+            "location": "Арбитражный суд Москвы",
+            "createdAt": "2026-07-10 07:58:56"
+          }
+        ],
+        "documents": [
+          {
+            "id": 4,
+            "matterId": 3,
+            "name": "Расчёт задолженности.xlsx",
+            "category": "Расчёт",
+            "status": "Готов",
+            "updatedAt": "2026-07-10 07:58:56"
+          }
+        ],
+        "activities": [
+          {
+            "id": 6,
+            "matterId": 3,
+            "type": "note",
+            "text": "Иск принят. Ожидается заседание, доказательства отправлены второй стороне.",
+            "createdAt": "2026-07-08T12:00:00.000Z"
+          },
+          {
+            "id": 5,
+            "matterId": 3,
+            "type": "matter",
+            "text": "Дело создано и добавлено в рабочую воронку",
+            "createdAt": "2026-07-02T07:00:00.000Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Елена Волкова",
+    "phone": "+7 977 084-55-21",
+    "email": "volkova@mail.ru",
+    "caseType": "Наследство",
+    "description": "Первичная консультация по пакету документов.",
+    "deadline": "2026-07-22T07:00:00.000Z",
+    "assignee": "Я",
+    "status": "Консультация",
+    "createdAt": "2026-07-10 07:58:56",
+    "updatedAt": "2026-07-10 07:58:56",
+    "matters": [
+      {
+        "id": 4,
+        "clientId": 4,
+        "title": "Оформление наследства",
+        "number": "Н-2026-118",
+        "practice": "Наследство",
+        "stage": "Консультация",
+        "court": null,
+        "judge": null,
+        "hearingAt": null,
+        "deadline": "2026-07-22T15:00:00.000Z",
+        "assignee": "Я",
+        "summary": "Первичная консультация завершена. Клиент собирает документы о родстве и составе имущества.",
+        "createdAt": "2026-07-10 07:58:56",
+        "updatedAt": "2026-07-10 07:58:56",
+        "tasks": [
+          {
+            "id": 6,
+            "matterId": 4,
+            "title": "Запросить свидетельство о рождении",
+            "dueAt": "2026-07-14T09:00:00.000Z",
+            "priority": "medium",
+            "status": "todo",
+            "type": "document",
+            "telegram": true,
+            "telegramSent": false,
+            "createdAt": "2026-07-10 07:58:56"
+          }
+        ],
+        "events": [],
+        "documents": [
+          {
+            "id": 5,
+            "matterId": 4,
+            "name": "Свидетельство о смерти.pdf",
+            "category": "Основание",
+            "status": "Готов",
+            "updatedAt": "2026-07-10 07:58:56"
+          },
+          {
+            "id": 6,
+            "matterId": 4,
+            "name": "Документ о родстве",
+            "category": "Основание",
+            "status": "Ожидается",
+            "updatedAt": "2026-07-10 07:58:56"
+          }
+        ],
+        "activities": [
+          {
+            "id": 8,
+            "matterId": 4,
+            "type": "note",
+            "text": "Первичная консультация завершена. Клиент собирает документы о родстве и составе имущества.",
+            "createdAt": "2026-07-08T12:00:00.000Z"
+          },
+          {
+            "id": 7,
+            "matterId": 4,
+            "type": "matter",
+            "text": "Дело создано и добавлено в рабочую воронку",
+            "createdAt": "2026-07-02T07:00:00.000Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "ООО «Атлас»",
+    "phone": "+7 495 330-07-18",
+    "email": "legal@atlas.ru",
+    "caseType": "Корпоративное право",
+    "description": "Проверка договора с новым подрядчиком.",
+    "deadline": "2026-07-28T07:00:00.000Z",
+    "assignee": "Я",
+    "status": "Новый",
+    "createdAt": "2026-07-10 07:58:56",
+    "updatedAt": "2026-07-10 07:58:56",
+    "matters": [
+      {
+        "id": 5,
+        "clientId": 5,
+        "title": "Проверка договора поставки",
+        "number": "КП-2026-077",
+        "practice": "Корпоративное право",
+        "stage": "Новый",
+        "court": null,
+        "judge": null,
+        "hearingAt": null,
+        "deadline": "2026-07-28T15:00:00.000Z",
+        "assignee": "Я",
+        "summary": "Нужно проверить ответственность, сроки поставки и порядок одностороннего расторжения.",
+        "createdAt": "2026-07-10 07:58:56",
+        "updatedAt": "2026-07-10 07:58:56",
+        "tasks": [
+          {
+            "id": 7,
+            "matterId": 5,
+            "title": "Проверить раздел об ответственности",
+            "dueAt": "2026-07-12T13:00:00.000Z",
+            "priority": "high",
+            "status": "todo",
+            "type": "task",
+            "telegram": false,
+            "telegramSent": false,
+            "createdAt": "2026-07-10 07:58:56"
+          },
+          {
+            "id": 8,
+            "matterId": 5,
+            "title": "Подготовить таблицу разногласий",
+            "dueAt": "2026-07-16T15:00:00.000Z",
+            "priority": "medium",
+            "status": "todo",
+            "type": "document",
+            "telegram": false,
+            "telegramSent": false,
+            "createdAt": "2026-07-10 07:58:56"
+          }
+        ],
+        "events": [],
+        "documents": [
+          {
+            "id": 7,
+            "matterId": 5,
+            "name": "Договор поставки.docx",
+            "category": "Договор",
+            "status": "На проверке",
+            "updatedAt": "2026-07-10 07:58:56"
+          }
+        ],
+        "activities": [
+          {
+            "id": 10,
+            "matterId": 5,
+            "type": "note",
+            "text": "Нужно проверить ответственность, сроки поставки и порядок одностороннего расторжения.",
+            "createdAt": "2026-07-08T12:00:00.000Z"
+          },
+          {
+            "id": 9,
+            "matterId": 5,
+            "type": "matter",
+            "text": "Дело создано и добавлено в рабочую воронку",
+            "createdAt": "2026-07-02T07:00:00.000Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Сергей Петров",
+    "phone": "+7 926 715-90-11",
+    "email": "petrov@mail.ru",
+    "caseType": "Трудовой спор",
+    "description": "Дело завершено, документы переданы клиенту.",
+    "deadline": "2026-07-06T07:00:00.000Z",
+    "assignee": "Я",
+    "status": "Закрыт",
+    "createdAt": "2026-07-10 07:58:56",
+    "updatedAt": "2026-07-10 07:58:56",
+    "matters": [
+      {
+        "id": 6,
+        "clientId": 6,
+        "title": "Трудовой спор с работодателем",
+        "number": "ТС-2025-204",
+        "practice": "Трудовой спор",
+        "stage": "Закрыт",
+        "court": null,
+        "judge": null,
+        "hearingAt": null,
+        "deadline": "2026-07-06T15:00:00.000Z",
+        "assignee": "Я",
+        "summary": "Соглашение исполнено, документы и итоговая справка переданы клиенту.",
+        "createdAt": "2026-07-10 07:58:56",
+        "updatedAt": "2026-07-10 07:58:56",
+        "tasks": [
+          {
+            "id": 9,
+            "matterId": 6,
+            "title": "Передать итоговые документы",
+            "dueAt": "2026-07-06T09:00:00.000Z",
+            "priority": "low",
+            "status": "done",
+            "type": "document",
+            "telegram": false,
+            "telegramSent": false,
+            "createdAt": "2026-07-10 07:58:56"
+          }
+        ],
+        "events": [],
+        "documents": [
+          {
+            "id": 8,
+            "matterId": 6,
+            "name": "Соглашение сторон.pdf",
+            "category": "Итоговый",
+            "status": "Готов",
+            "updatedAt": "2026-07-10 07:58:56"
+          }
+        ],
+        "activities": [
+          {
+            "id": 12,
+            "matterId": 6,
+            "type": "note",
+            "text": "Соглашение исполнено, документы и итоговая справка переданы клиенту.",
+            "createdAt": "2026-07-08T12:00:00.000Z"
+          },
+          {
+            "id": 11,
+            "matterId": 6,
+            "type": "matter",
+            "text": "Дело создано и добавлено в рабочую воронку",
+            "createdAt": "2026-07-02T07:00:00.000Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Анна Белова",
+    "phone": "+7 985 244-38-67",
+    "email": "belova@mail.ru",
+    "caseType": "Недвижимость",
+    "description": "Проверить выписку и ограничения объекта.",
+    "deadline": "2026-07-15T07:00:00.000Z",
+    "assignee": "Я",
+    "status": "В работе",
+    "createdAt": "2026-07-10 07:58:56",
+    "updatedAt": "2026-07-10 07:58:56",
+    "matters": [
+      {
+        "id": 7,
+        "clientId": 7,
+        "title": "Проверка сделки с недвижимостью",
+        "number": "НД-2026-052",
+        "practice": "Недвижимость",
+        "stage": "В работе",
+        "court": null,
+        "judge": null,
+        "hearingAt": null,
+        "deadline": "2026-07-15T15:00:00.000Z",
+        "assignee": "Я",
+        "summary": "Выписка получена. Требуется проверить ограничение и согласовать формулировку гарантии продавца.",
+        "createdAt": "2026-07-10 07:58:56",
+        "updatedAt": "2026-07-10 07:58:56",
+        "tasks": [
+          {
+            "id": 10,
+            "matterId": 7,
+            "title": "Проверить ограничение в выписке",
+            "dueAt": "2026-07-11T10:00:00.000Z",
+            "priority": "high",
+            "status": "todo",
+            "type": "document",
+            "telegram": true,
+            "telegramSent": false,
+            "createdAt": "2026-07-10 07:58:56"
+          },
+          {
+            "id": 11,
+            "matterId": 7,
+            "title": "Согласовать гарантию продавца",
+            "dueAt": "2026-07-14T12:00:00.000Z",
+            "priority": "medium",
+            "status": "todo",
+            "type": "call",
+            "telegram": false,
+            "telegramSent": false,
+            "createdAt": "2026-07-10 07:58:56"
+          }
+        ],
+        "events": [],
+        "documents": [
+          {
+            "id": 9,
+            "matterId": 7,
+            "name": "Выписка ЕГРН.pdf",
+            "category": "Недвижимость",
+            "status": "На проверке",
+            "updatedAt": "2026-07-10 07:58:56"
+          }
+        ],
+        "activities": [
+          {
+            "id": 14,
+            "matterId": 7,
+            "type": "note",
+            "text": "Выписка получена. Требуется проверить ограничение и согласовать формулировку гарантии продавца.",
+            "createdAt": "2026-07-08T12:00:00.000Z"
+          },
+          {
+            "id": 13,
+            "matterId": 7,
+            "type": "matter",
+            "text": "Дело создано и добавлено в рабочую воронку",
+            "createdAt": "2026-07-02T07:00:00.000Z"
+          }
+        ]
+      }
+    ]
+  }
+]
