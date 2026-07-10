@@ -1,6 +1,8 @@
-# Juris — CRM для  юриста
+# Juris — CRM для юриста
 
 [Русский](#русский) · [English](#english)
+
+**Живое демо / Live demo:** [valencetests.ru](https://valencetests.ru)
 
 ![Juris dashboard](docs/screenshots/dashboard.png)
 
